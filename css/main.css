@@ -15,29 +15,30 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #365d9b;
 }
 a:hover {
     text-decoration: underline;
+    color: #2a2d33;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
 }
 p {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1em;
     color: #333;
     font-family: 'Verdana', 'Geneva', 'Sans-Serif';
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #365d9b;
     font-size: .8em;
 }
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 ul.posts li {
