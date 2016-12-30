@@ -18,7 +18,7 @@ myApp.config(function ($routeProvider) {
         })
 
         // route for the resume page
-        .when('/resume', {
+        .when('#resume', {
             templateUrl: 'pages/resume.html',
             controller: 'resumeController'
         })
