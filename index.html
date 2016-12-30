@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 	<head>
 		<title>Aaron Weiss</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />-->
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+        <!-- link to AngularJS and main controller script -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="script.js"></script>
 	</head>
+    <!-- define angular controller -->
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/resume">Resume</a></li>
-        		<li><a href="/blog">Blog</a></li>
-			<li><a href="/blog">Showcase</a></li>
-    		</ul>
+		<nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-id-card-o"></i>About</a></li>
+                    <li><a href="#resume"><i class="fa fa-list"></i>Resume</a></li>
+                    <li><a href="#blog"><i class="fa fa-keyboard-o"></i>Blog</a></li>
+                    <li><a href="#showcase"><i class="fa fa-tint"></i>Showcase</a></li>
+                </ul>
+            </div>
 		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Welcome!</h1>
-				<p>Aspiring full-stack developer; hobbyist game developer.</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
+
+		<div id="main">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div ng-view></div>
+		</div>
+
+		<footer class="text-left">
     		<ul>
         		<li><a href="mailto:aiceweiss@hotmail.com">email</a></li>
         		<li><a href="https://github.com/aaronjweiss">github.com/aaronjweiss</a></li>
 			</ul>
 		</footer>
 	</body>
+    <!-- <h1>Welcome!</h1>
+				<p>Aspiring full-stack developer; hobbyist game developer.</a></p> -->
 </html>
