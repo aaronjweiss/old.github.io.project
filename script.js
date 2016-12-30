@@ -39,7 +39,7 @@ myApp.config(function ($routeProvider) {
 // create the controller and inject Angular's $scope
 myApp.controller('mainController', function ($scope) {
     // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
+    $scope.message = 'Aspiring full-stack developer; hobbyist game developer.';
 });
 
 myApp.controller('aboutController', function ($scope) {
