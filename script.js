@@ -6,31 +6,31 @@ myApp.config(function ($routeProvider) {
     $routeProvider
 
         // route for the home page
-        .when('/#', {
+        .when('/', {
             templateUrl: 'pages/home.html',
             controller: 'mainController'
         })
 
         // route for the about page
-        .when('/#about', {
+        .when('/about', {
             templateUrl: 'pages/about.html',
             controller: 'aboutController'
         })
 
         // route for the resume page
-        .when('/#resume', {
+        .when('/resume', {
             templateUrl: 'pages/resume.html',
             controller: 'resumeController'
         })
 
         // route for the blog page
-        .when('/#blog', {
+        .when('/blog', {
             templateUrl: 'pages/blog.html',
             controller: 'blogController'
         })
 
         // route for the showcase page
-        .when('/#showcase', {
+        .when('/showcase', {
             templateUrl: 'pages/showcase.html',
             controller: 'showcaseController'
         });
