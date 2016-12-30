@@ -1,5 +1,6 @@
 body {
-    margin: 40px 40px;
+    margin: 40px auto;
+    width: 85%;
     background-color: #FFFCF6;
 }
 nav ul, footer ul {
