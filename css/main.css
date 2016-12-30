@@ -13,12 +13,15 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+i {
+    padding: 8px;
+}
 a {
     text-decoration: none;
     color: #365d9b;
 }
 a:hover {
-    font-weight: bold; 
+    text-decoration: underline;
 }
 h1 {
     font-size: 1.5em;
