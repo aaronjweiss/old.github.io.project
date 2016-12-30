@@ -2,11 +2,14 @@
 <html ng-app="myApp">
 	<head>
 		<title>Aaron Weiss</title>
-		<!-- link to main stylesheet -->
-		<!--<link rel="stylesheet" type="text/css" href="/css/main.css">-->
+		
+        <!-- link to bootstrap and FA stylesheets -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <!-- link to main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
         <!-- link to AngularJS and main controller script -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
@@ -17,7 +20,7 @@
 	</head>
     <!-- define angular controller -->
 	<body ng-controller="mainController">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
 				<div class="navbar-header">
 				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,11 +28,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				    </button>
-				      <a class="navbar-brand" href="#">Aaron Weiss's Page</a>
+				      <a class="navbar-brand" href="#"><i class="fa fa-home"></i>Aaron Weiss</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-					    <li><a class ="active" href="#"><i class="fa fa-home"></i>Home</a></li>
 					    <li><a href="#about"><i class="fa fa-font"></i>About</a></li>
 					    <li><a href="#resume"><i class="fa fa-file-text"></i>Resume</a></li>
 					    <li><a href="#blog"><i class="fa fa-comment"></i>Blog</a></li>
@@ -46,7 +48,7 @@
 
 		<footer class="text-left">
 			<hr>
-			<div class="container">
+			<div class="navbar navbar-fixed-bottom">
 				<ul class="list-inline">
 					<li><a href="mailto:aiceweiss@hotmail.com"><i class="fa fa-envelope"></i>email</a></li>
 					<li><a href="https://github.com/aaronjweiss"><i class="fa fa-github"></i>github.com/aaronjweiss</a></li>
