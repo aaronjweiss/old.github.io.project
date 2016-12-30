@@ -37,13 +37,13 @@ myApp.controller('mainController', function ($scope) {
 });
 
 myApp.controller('aboutController', function ($scope) {
-    $scope.message = 'Look! I am an about page.';
+    $scope.message = 'About me.';
 });
 
 myApp.controller('resumeController', function ($scope) {
-    $scope.message = 'Resume.';
+    $scope.message = 'Informative.';
 });
 
 myApp.controller('blogController', function ($scope) {
-    $scope.message = 'Blog.';
+    $scope.message = 'My Blog.';
 });
