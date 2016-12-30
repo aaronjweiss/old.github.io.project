@@ -27,12 +27,6 @@ myApp.config(function ($routeProvider) {
         .when('/blog', {
             templateUrl: 'pages/blog.html',
             controller: 'blogController'
-        })
-
-        // route for the showcase page
-        .when('/showcase', {
-            templateUrl: 'pages/showcase.html',
-            controller: 'showcaseController'
         });
 });
 
@@ -52,8 +46,4 @@ myApp.controller('resumeController', function ($scope) {
 
 myApp.controller('blogController', function ($scope) {
     $scope.message = 'Blog.';
-});
-
-myApp.controller('showcaseController', function ($scope) {
-    $scope.message = 'Showcase.';
 });
