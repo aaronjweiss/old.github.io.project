@@ -10,20 +10,11 @@
         <link rel="stylesheet" type="text/css" href="/styles/main.css">
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 
-        <!-- link to AngularJS and main controller script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="/scripts/app.js"></script>
-        <script src="/scripts/controllers/main.js"></script>
-        <script src="/scripts/controllers/about.js"></script>
-        <script src="/scripts/controllers/resume.js"></script>
-        <script src="/scripts/controllers/blog.js"></script>
+        
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
     <!-- define angular controller -->
-	<body ng-controller="mainController">
+	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
 				<div class="navbar-header">
@@ -32,13 +23,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				    </button>
-				      <a class="navbar-brand" href="#"><i class="fa fa-home"></i>Aaron Weiss</a>
+				      <a class="navbar-brand" href="#!/"><i class="fa fa-home"></i>Aaron Weiss</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-					    <li><a href="#about"><i class="fa fa-font"></i>About</a></li>
-					    <li><a href="#resume"><i class="fa fa-file-text"></i>Resume</a></li>
-					    <li><a href="#blog"><i class="fa fa-comment"></i>Blog</a></li>
+					    <li><a href="#!/about"><i class="fa fa-font"></i>About</a></li>
+					    <li><a href="#!/resume"><i class="fa fa-file-text"></i>Resume</a></li>
+					    <li><a href="#!/blog"><i class="fa fa-comment"></i>Blog</a></li>
 					</ul>
 				</div>
             </div>
@@ -59,5 +50,18 @@
 				</ul>
 			</div>
 		</footer>
+
+        <!-- link to AngularJS and main controller script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <!-- Other controller scripts -->
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+
+        <script src="scripts/controllers/resume.js"></script>
+        <script src="scripts/controllers/blog.js"></script>
 	</body>
 </html>
