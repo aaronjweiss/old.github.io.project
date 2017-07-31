@@ -31,11 +31,6 @@ myApp.config(function ($routeProvider) {
 });
 
 
-
-myApp.controller('aboutController', function ($scope) {
-    $scope.message = 'About me.';
-});
-
 myApp.controller('resumeController', function ($scope) {
     $scope.message = 'Informative.';
 });
