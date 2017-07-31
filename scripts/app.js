@@ -1,6 +1,11 @@
 // create the module and name it myApp
-var myApp = angular.module('myApp', ['ngRoute']);
-angular.module('ngRoute');
+var myApp = angular.module('myApp', [
+    'ngRoute',
+    'main',
+    'about',
+    'resume',
+    'blog'
+]);
 // configure our routes
 myApp.config(function ($routeProvider) {
     $routeProvider
