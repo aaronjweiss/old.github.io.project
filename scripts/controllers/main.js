@@ -1,9 +1,5 @@
 // create the controller and inject Angular's $scope
-angular
-    .module('ngRoute')
-    .controller('mainController', mainController($scope, $http));
-
-function mainController($scope, $http) {
+angular.module('myApp').controller('blogController', ['$scope', '$http', function ($scope, $http) {
+    // create a message to display in our view
     $scope.message = 'Aspiring full-stack developer; hobbyist game developer.';
-}
-    
+}]);

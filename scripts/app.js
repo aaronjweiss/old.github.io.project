@@ -1,13 +1,7 @@
 // create the module and name it myApp
-var myApp = angular.module('myApp', [
-    'ngRoute',
-    'main',
-    'about',
-    'resume',
-    'blog'
-]);
+angular.module('myApp', ['ngRoute']);
 // configure our routes
-myApp.config(function ($routeProvider) {
+angular.module('myApp', ['ngRoute']).config(function ($routeProvider) {
     $routeProvider
 
         // route for the home page
