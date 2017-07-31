@@ -29,12 +29,3 @@ myApp.config(function ($routeProvider) {
             controller: 'blogController'
         });
 });
-
-
-myApp.controller('resumeController', function ($scope) {
-    $scope.message = 'Informative.';
-});
-
-myApp.controller('blogController', function ($scope) {
-    $scope.message = 'My Blog.';
-});
