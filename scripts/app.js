@@ -5,7 +5,7 @@ angular.module('myApp', [
     'myApp.about'
 ]).
     config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
-        $locationProvider.hashPrefix('!');
+        //$locationProvider.hashPrefix('!');
 
         $routeProvider.otherwise({ redirectTo: '/' });
     }]);
