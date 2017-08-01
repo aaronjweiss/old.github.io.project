@@ -10,6 +10,6 @@ angular.module('myApp.blog', ['ngRoute'])
         });
     }])
 
-    .controller('blogController', [function ($scope) {
+    .controller('blogController', ['$scope', '$http', function ($scope, $http) {
         $scope.message = 'My thoughts.';
     }]);
