@@ -4,7 +4,7 @@
 angular.module('myApp.resume', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider.when('/resume', {
             templateUrl: '/views/resume.html',
             controller: 'resumeController'
         });

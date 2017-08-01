@@ -4,7 +4,7 @@
 angular.module('myApp.blog', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider.when('/blog', {
             templateUrl: '/views/blog.html',
             controller: 'blogController'
         });
