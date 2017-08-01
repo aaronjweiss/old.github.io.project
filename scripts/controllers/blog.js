@@ -1,5 +1,15 @@
+'use strict';
+
 // create the controller and inject Angular's $scope
-angular.module('ngRoute').controller('blogController', ['$scope', '$http', function ($scope, $http) {
-    // create a message to display in our view
-    $scope.message = 'My Blog.';
-}]);
+angular.module('myApp.blog', ['ngRoute'])
+
+    .config(['$routeProvider', function ($routeProvider) {
+        $routeProvider.when('/', {
+            templateUrl: '/views/blog.html',
+            controller: 'blogController'
+        });
+    }])
+
+    .controller('blogController', [function () {
+        //this.sendMessage = 'Aspiring full-stack developer; hobbyist game developer.';
+    }]);
