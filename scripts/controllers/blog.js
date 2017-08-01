@@ -10,6 +10,6 @@ angular.module('myApp.blog', ['ngRoute'])
         });
     }])
 
-    .controller('blogController', [function () {
-        //this.sendMessage = 'Aspiring full-stack developer; hobbyist game developer.';
+    .controller('blogController', [function ($scope) {
+        $scope.message = 'My thoughts.';
     }]);

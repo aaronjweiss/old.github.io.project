@@ -10,6 +10,6 @@ angular.module('myApp.resume', ['ngRoute'])
         });
     }])
 
-    .controller('resumeController', [function () {
-        //this.sendMessage = 'Aspiring full-stack developer; hobbyist game developer.';
+    .controller('resumeController', [function ($scope) {
+        $scope.message = 'Informative.';
     }]);

@@ -10,6 +10,6 @@ angular.module('myApp.main', ['ngRoute'])
         });
     }])
 
-    .controller('mainController', [function () {
-        //this.sendMessage = 'Aspiring full-stack developer; hobbyist game developer.';
+    .controller('mainController', [function ($scope) {
+        $scope.message = 'Aspiring full-stack developer; hobbyist game developer.';
     }]);
