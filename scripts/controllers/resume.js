@@ -10,6 +10,6 @@ angular.module('myApp.resume', ['ngRoute'])
         });
     }])
 
-    .controller('resumeController', [function ($scope) {
+    .controller('resumeController', ['$scope', '$http', function ($scope, $http) {
         $scope.message = 'Informative.';
     }]);

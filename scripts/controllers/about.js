@@ -10,6 +10,6 @@ angular.module('myApp.about', ['ngRoute'])
         });
     }])
 
-    .controller('aboutController', [function ($scope) {
+    .controller('aboutController', ['$scope', '$http', function ($scope, $http) {
         $scope.message = 'About me.';
     }]);
