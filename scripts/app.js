@@ -8,7 +8,7 @@ var app = angular.module('app', ['ui.router']);
     $stateProvider
 	
 		// MAIN STATES AND NESTED VIEWS ========================================
-        .state('#', {
+        .state('main', {
             url: '/',
             templateUrl: 'views/main.html',
 			controller: 'mainController'
