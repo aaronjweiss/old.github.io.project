@@ -1,15 +1,8 @@
 'use strict';
 
 // create the controller and inject Angular's $scope
-angular.module('myApp.resume', ['ngRoute'])
+app    
 
-    .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/resume', {
-            templateUrl: '/views/resume.html',
-            controller: 'resumeController'
-        });
-    }])
-
-    .controller('resumeController', ['$scope', '$http', function ($scope, $http) {
+	.controller('resumeController', ['$scope', function ($scope) {
         $scope.message = 'Informative.';
     }]);
