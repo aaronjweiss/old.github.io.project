@@ -3,13 +3,13 @@ var app = angular.module('app', ['ui.router']);
     
 	app.config(function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('');
 
     $stateProvider
 	
 		// MAIN STATES AND NESTED VIEWS ========================================
         .state('main', {
-            url: '/',
+            url: '',
             templateUrl: 'views/main.html',
 			controller: 'mainController'
         })
