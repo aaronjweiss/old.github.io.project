@@ -5,6 +5,6 @@ i {
     padding: 6px;
 }
 
-navbar {
+.navbar navbar-fixed-bottom {
     background-color: #ff0000;
 }
