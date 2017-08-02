@@ -5,8 +5,6 @@ i {
     padding: 6px;
 }
 
-.myfooter {
-    background-color: #ff0000;
-	background: #ff0000;
-	color: #ff0000;
+hr {
+    padding: 0px;
 }
