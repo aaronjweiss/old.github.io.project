@@ -1,17 +1,22 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-8 blog-main">
+			
             <div class="blog-post" ng-repeat="blog in blogs | filter:filter>
                 <h2 class="blog-post-title"> {{blog.name}} </h2>
                 <p class="blog-post-meta">{{blog.meta}}<a href="#"> {{blog.user}}</a></p>
                 <p>{{blog.content}}</p>
             </div><!-- /.blog-post -->
+			<hr>
+			<h2 class="blog-post-title">Create Blog Post</h2>
+			<hr>
 			<input type="text" ng-model="blogTitle" placeholder="Title"/><br>
             <input type="textarea" ng-model="blogContent" placeholder="Blog away.."/><br>
 			<input type="text" ng-model="blogDate" placeholder="Date"/>
 			<input type="text" ng-model="blogUser" placeholder="User"/>
 			<button class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && blogContent && blogDate && blogUser">Add</button>
-        </div><!-- /.blog-main -->
+			<hr>
+		</div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
             <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
