@@ -11,9 +11,10 @@
 			<h2 class="blog-post-title">Create Blog Post</h2>
 			
             <div ng-app="app" ng-controller="wysiwygeditor" class="container app">
-                <div text-angular="text-angular" name="htmlcontent" ng-model="blogContent" ta-disabled='disabled'></div>
+                <input type="text" ng-model="blogTitle">
+                <div text-angular="text-angular" name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
             </div>
-                <button type ="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && blogContent && blogDate && blogUser">Add</button>
+                <button type ="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && htmlcontent">Add</button>
                 <hr>
             </div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
