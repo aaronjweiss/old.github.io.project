@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Aaron Weiss</title>
-		
-        <!-- link to bootstrap and FA stylesheets -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-        <!-- link to main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/styles/main.css">
-		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+<head>
+    <title>Aaron Weiss</title>
 
-        
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-    <!-- define angular controller -->
-	<body ng-app="app">
-		<nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-				<div class="navbar-header">
-				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
-				    </button>
-				      <a class="navbar-brand" ui-sref="main"><i class="fa fa-home"></i>Aaron Weiss</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-					    <li><a ui-sref="about"><i class="fa fa-font"></i>About</a></li>
-					    <li><a ui-sref="resume"><i class="fa fa-file-text"></i>Resume</a></li>
-					    <li><a ui-sref="blog"><i class="fa fa-comment"></i>Blog</a></li>
-					</ul>
-				</div>
+    <!-- link to bootstrap and FA stylesheets -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- define angular controller -->
+<body ng-app="app">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ui-sref="main"><i class="fa fa-home"></i>Aaron Weiss</a>
             </div>
-		</nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="about"><i class="fa fa-font"></i>About</a></li>
+                    <li><a ui-sref="resume"><i class="fa fa-file-text"></i>Resume</a></li>
+                    <li><a ui-sref="blog"><i class="fa fa-comment"></i>Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<div id="main" class="container">
-            <!-- angular templating -->
-            <!-- this is where content will be injected -->
-            <div ui-view></div>
-		</div>
+    <div id="main" class="container">
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ui-view></div>
+    </div>
 
-		<footer class="text-left">		
-			<div class="navbar navbar-fixed-bottom">
-                <hr>
-				<ul class="list-inline">
-					<li><a href="mailto:aiceweiss@hotmail.com"><i class="fa fa-envelope"></i>email</a></li>
-					<li><a href="https://github.com/aaronjweiss"><i class="fa fa-github"></i>github.com/aaronjweiss</a></li>
-				</ul>
-			</div>
-		</footer>
+    <footer class="text-left">
+        <div class="navbar navbar-fixed-bottom">
+            <hr>
+            <ul class="list-inline">
+                <li><a href="mailto:aiceweiss@hotmail.com"><i class="fa fa-envelope"></i>email</a></li>
+                <li><a href="https://github.com/aaronjweiss"><i class="fa fa-github"></i>github.com/aaronjweiss</a></li>
+            </ul>
+        </div>
+    </footer>
 
-        <!-- Google Firebase for backend -->
-        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyCyAaKS6PhMMH2jBMwqq2vCipZ8zMo8PmQ",
-                authDomain: "personalapp-5aad6.firebaseapp.com",
-                databaseURL: "https://personalapp-5aad6.firebaseio.com",
-                projectId: "personalapp-5aad6",
-                storageBucket: "",
-                messagingSenderId: "61684670523"
-            };
-            firebase.initializeApp(config);
-        </script>
-        <!-- link to AngularJS and main controller script -->
-
-        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js'></script>
-        <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="scripts/app.js"></script>
-        <!--  TextAngular scripts -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.4.4/textAngular-sanitize.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.1.2/dist/textAngular.min.js'></script>
-        <!-- Other controller scripts -->
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/resume.js"></script>
-        <script src="scripts/controllers/blog.js"></script>
-	</body>
+    <!-- Google Firebase for backend -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCyAaKS6PhMMH2jBMwqq2vCipZ8zMo8PmQ",
+            authDomain: "personalapp-5aad6.firebaseapp.com",
+            databaseURL: "https://personalapp-5aad6.firebaseio.com",
+            projectId: "personalapp-5aad6",
+            storageBucket: "",
+            messagingSenderId: "61684670523"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- link to AngularJS and main controller script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <!--  TextAngular scripts -->
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.1.2/textAngular.min.js'></script>
+    <!-- Other controller scripts -->
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/resume.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
+</body>
 </html>
