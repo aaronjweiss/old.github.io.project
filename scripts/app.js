@@ -1,5 +1,8 @@
 // create the module and name it myApp
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', [
+    'ui.router',
+    'textAngular'
+    ]);
     
 	app.config(function($stateProvider, $urlRouterProvider) {
 
