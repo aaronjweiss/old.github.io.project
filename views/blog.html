@@ -10,13 +10,12 @@
 			<hr>
 			<h2 class="blog-post-title">Create Blog Post</h2>
 			<hr>
-			<input type="text" ng-model="blogTitle" placeholder="Title"/><br>
-            <input type="textarea" ng-model="blogContent" placeholder="Blog away.."/><br>
-			<input type="text" ng-model="blogDate" placeholder="Date"/>
-			<input type="text" ng-model="blogUser" placeholder="User"/>
-			<button class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && blogContent && blogDate && blogUser">Add</button>
-			<hr>
-		</div><!-- /.blog-main -->
+            <div ng-app="app" ng-controller="wysiwygeditor" class="container app">
+
+            </div>
+                <button type ="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && blogContent && blogDate && blogUser">Add</button>
+                <hr>
+            </div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
             <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
