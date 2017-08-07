@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-8 blog-main">
 			
-            <div class="blog-post" ng-repeat="blog in blogs | filter:filter>
+            <div class="blog-post" ng-repeat="blog in blogs | filter:filter">
                 <h2 class="blog-post-title"> {{blog.name}} </h2>
                 <p class="blog-post-meta">{{blog.meta}}<a href="#"> {{blog.user}}</a></p>
                 <p>{{blog.content}}</p>
@@ -12,9 +12,9 @@
   
             <div ng-app="app" ng-controller="wysiwygeditor" class="container app">
                 <button type ="button" class="btn btn-secondary" ng-click="disabled = !disabled" unselectable>Disable text-angular Toggle</button>
-                <div text-angular="text-angular" name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
+                <div text-angular name="htmlVariable" ng-model="htmlVariable" ta-disabled='disabled'></div>
             </div>
-                <button type ="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && htmlcontent">Add</button>
+                <button type ="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && htmlVariable">Add</button>
                 <hr>
             </div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
