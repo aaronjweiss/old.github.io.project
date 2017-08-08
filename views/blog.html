@@ -12,10 +12,10 @@
             <div ng-app="app" ng-controller="blogController" class="container app">
                 <h3>Create Blog</h3>
                 <div text-angular name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
-                <button type="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && htmlcontent">Add</button>
+                
             </div>
-         
-                <hr>
+            <button type="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && htmlcontent">Add</button>
+            <hr>
 
         </div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
