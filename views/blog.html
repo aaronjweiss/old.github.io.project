@@ -10,13 +10,15 @@
 			<hr>
 			<h2 class="blog-post-title">Create Blog Post</h2>
   
-            <div ng-app="app" ng-controller="wysiwygeditor" class="container app">
+            <div ng-app="app" ng-controller="blogController" class="container app">
                 <button type ="button" class="btn btn-secondary" ng-click="disabled = !disabled" unselectable>Disable text-angular Toggle</button>
-                <div text-angular name="htmlVariable" ng-model="htmlVariable" ta-disabled='disabled'></div>
+                <div text-angular name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
             </div>
+
                 <button type ="button" class="btn btn-primary" ng-click="addBlog()" ng-show="blogTitle && htmlVariable">Add</button>
                 <hr>
-            </div><!-- /.blog-main -->
+
+        </div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
             <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
