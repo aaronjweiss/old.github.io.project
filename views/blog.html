@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-8 blog-main">
+        <div class="col-sm-8 blog-main">
 			
             <div class="blog-post" ng-repeat="blog in blogs | filter:filter">
                 <h2 class="blog-post-title"> {{blog.name}} </h2>
@@ -11,7 +11,8 @@
   
             <div ng-app="app" ng-controller="blogController" class="container app">
                 <h3>Create Blog</h3>
-                <input type="text" ng-model="blog.name" placeholder="Title" required>
+                <input class="titleInput" type="text" ng-model="blog.name" placeholder="Title" required>
+
                 <div text-angular name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
                 <button type="button" class="btn btn-primary" ng-click="addBlog()">Add</button>
             </div>

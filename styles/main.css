@@ -19,3 +19,8 @@ i {
     font-family: inherit;
     font-size: 100%;
 }
+
+.titleInput {
+    border: 0px;
+    padding: 5px;
+}
